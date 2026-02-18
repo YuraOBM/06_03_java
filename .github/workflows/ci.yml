@@ -1,12 +1,14 @@
 name: CI
+
 on:
   push:
     branches:
       - master
       - main
+      
 jobs:
   build:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     # TODO: укажите нужные permissions для GITHUB_TOKEN
     permissions:
       contents: read
